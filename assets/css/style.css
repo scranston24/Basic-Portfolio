@@ -5,24 +5,28 @@ body {
 }
 
 .header {
-  background: #ffffff;
-  overflow: hidden;
-  border-bottom: 3px solid #ccc;
-  height: 100px;
-  position: relative;
+ background-color: #ffffff ;
+ overflow: hidden;
+ border-bottom: 3px solid #ccc;
+ height: 100px;
+ position: relative;
+ width: 100%;
 }
 
-.header h1{
-  float: left;
-  background-color: #4aaaa5;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-  color: #ffffff;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 100px;
-  position: relative;
-
+.header h1 {
+ font-size: 30px;
+ float: left;
+ padding-left: 30px;
+ padding-right: 30px;
+ padding-top: 30px;
+ height: 100px;
+ background-color: #4aaaa5 ;
+ font-family: 'Georgia', Times, Times New Roman, serif;
+ color: #ffffff ;
+ margin: 0;
+ position: relative;
 }
+
  h2 {
    color: #4aaaa5;
    border-bottom: 3px solid #ccc;
@@ -31,26 +35,73 @@ body {
  p {
    font-size: 20px;
    font-family: 'Serif';
+   line-height: 1.8em;
  }
 
- .aside {
-   float: right;
-   position: relative;
-   right: 100px;
- }
 
 .header nav{
   float: right;
+  text-decoration: none;
+  margin-top: 30px;
 }
 
 .header nav ul{
   list-style: none;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .header nav ul li{
   display: inline;
   margin-left: 10px;
+  text-decoration: none;
+}
+
+.header nav ul li a{
+  text-decoration: none;
+  color: #808080;
+}
+
+.profilepic {
+  float: left;
+  padding: 10px 10px 10px 0;
+}
+
+aside {
+ float: right;
+ max-width: 270px;
+ background-color: white;
+ border: #dddddd 0.5px solid;
+ padding: 30px, 50px, 50px, 50px;
+ display: block;
+ vertical-align: baseline;
+ position: relative;
+ bottom: 675px;
+ right: 400px;
+ margin: 0;
+}
+
+.icons {
+ max-height: 50px;
+ align-content: center;
+}
+
+.content{
+ padding: 20px 10 0 0;
+ clear: both;
+ margin: 0;
+ border: 0;
+ display: block;
+}
+
+.connect {
+ color: #4aaaa5 ;
+ border-bottom: #dddddd 1px solid;
+ padding: 0 0 10px 0;
+ font-size: 18px;
+ font-weight: bold;
+ text-align: center;
+ font-family: 'Georgia', Times, Times New Roman, serif;
+ vertical-align: baseline;
 }
 
 .wrap {
@@ -58,15 +109,34 @@ body {
   margin: auto;
 }
 
-.article {
-  background: #ffffff;
-  padding: 30px;
-  margin-top: 50px;
+section {
+  background-color: #ffffff;
+  padding: 16.72px 30px 30px 30px;
+  margin: 0;
   margin-bottom: 50px;
   float: left;
-  width: 650px;
+  max-width: 650px;
+  font-size: 100%;
+  border: 1px solid #dddddd;
   position: relative;
-  border: 1px solid #ccc
+  display: block;
+  font: 'Arial' 'Helvetica Neue', Helvetica, sans-serif;
+  vertical-align: baseline;
+}
+
+#aboutme  {
+ font-size: 24px;
+ font-weight: bold;
+ padding: 0 0 10px 0;
+ border-bottom: 3px solid #cccccc ;
+ color: #4aaaa5 ;
+ font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: '';
 }
 
 .footer{
@@ -76,4 +146,35 @@ body {
   border-top: solid #4aaaa5 4px;
   text-align: center;
   align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  font-size: 10px;
+  vertical-align: baseline;
+  display: block;
+}
+
+.my-form {
+  padding: 20px;
+}
+
+.my-form .form-group {
+  padding-bottom: 20px;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+  padding: 10px;
+  width: 100%;
+}
+
+.button{
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
 }
